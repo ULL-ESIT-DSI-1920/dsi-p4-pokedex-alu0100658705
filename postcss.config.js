@@ -5,5 +5,6 @@ module.exports = {
 		require("postcss-nested"),
 		require("autoprefixer"),
 		require("postcss-clean"),
+		require("postcss-animation"),
 	],
 };

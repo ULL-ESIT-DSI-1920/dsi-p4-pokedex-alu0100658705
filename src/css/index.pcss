@@ -16,10 +16,6 @@
 	.front {
 		display: none;
 	}
-	&:hover .front {
-		display: inline-block;
-		transform: scale(2);
-	}
 	&:hover .back {
 		display: none;
 	}
@@ -30,5 +26,18 @@
 		margin-top: 0.67em;
 		margin-bottom: 0.67em;
 		font-weight: bold;
+	}
+	&:hover .front {
+		display: inline-block;
+		animation: resize 2s infinite;
+	}
+}
+
+@keyframes resize {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(2);
 	}
 }
