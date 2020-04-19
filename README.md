@@ -12,7 +12,11 @@ Se ha implementado un fichero HTML de inicio con un elemento _div_ que contiene 
 
 Luego se llama a la función _generatePokedex_ que define los distintos elementos HTML que conforman cada carta.
 
-![cap_02](src/assets/images/cap03.png)
+![cap_03](src/assets/images/cap03.png)
+
+Estructura de la clase _Pokemon_:
+
+![cap_04](src/assets/images/cap04.png)
 
 2. **Modifica el ejemplo de modo que todos los pokemon se vean de espaldas y cuando pases el ratón por encima de ellos, se muestren de frente. ¿Serías capaz también de conseguir aumentar su tamaño mediante CSS? ¿Que propiedad tendrías que utilizar? ¿Encuentras alguna forma de mantener el pixelado de la imagen sin que se vea borrosa?**
 
