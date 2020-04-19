@@ -22,13 +22,20 @@ const getPokemon = async () => {
 const pokedex = document.getElementById("pokedex");
 const generatePokedex = async () => {
 	for (var i = 0; i < pokemons.length; i++) {
-		console.log(pokemons[i].nombre);
 		const poke_info = document.createElement("div");
-		const poke_imagen = document.createElement("img");
+		poke_info.classList.add("carta");
+
+		const poke_back = document.createElement("img");
+		poke_back.srcset = pokemons[i].back;
+		poke_back.classList.add("back");
+		const poke_front = document.createElement("img");
+		poke_front.srcset = pokemons[i].front;
+		poke_front.classList.add("front");
+
 		const poke_texto = document.createElement("h5");
-		poke_imagen.srcset = pokemons[i].back;
 		poke_texto.innerText = pokemons[i].id + ". " + pokemons[i].nombre;
-		poke_info.append(poke_imagen, poke_texto);
+
+		poke_info.append(poke_back, poke_front, poke_texto);
 		pokedex.append(poke_info);
 	}
 };

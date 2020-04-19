@@ -1,21 +1,9 @@
 {
     "plugins": {
         "postcss-mixins": true,
-        "postcss-font-magician": true,
-        "postcss-nesting": true,
-        "@fullhuman/postcss-purgecss": {
-            "content": [
-                "./src/**/*.html",
-                "./src/**/*.js"
-            ]
-        }
-        "postcss-preset-env": {
-            "stage": 3,
-            "features": {
-                "nesting-rules": true
-            }
-        }
-        "autoprefixer": true,
-        "postcss-clean": true
-    }      
+		"postcss-font-magician": true,
+		"postcss-nested": true,
+		"autoprefixer": true,
+		"postcss-clean": true
+    }
 }
