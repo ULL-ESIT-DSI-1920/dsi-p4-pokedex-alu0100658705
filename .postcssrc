@@ -3,6 +3,7 @@
         "postcss-mixins": true,
 		"postcss-font-magician": true,
 		"postcss-nested": true,
+		"postcss-ref": true,
 		"autoprefixer": true,
 		"postcss-clean": true
     }

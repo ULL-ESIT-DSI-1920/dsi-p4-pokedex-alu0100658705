@@ -1,3 +1,30 @@
+.topnav {
+	overflow: hidden;
+	background-color: dimgray;
+	.btn {
+		float: left;
+		color: white;
+		text-align: center;
+		padding: 15px 15px;
+		text-decoration: none;
+		font-size: 18px;
+		&:hover {
+			background-color: teal;
+			color: black;
+		}
+	}
+	.active {
+		font-size: 20px;
+		background-color: green;
+		color: white;
+		@ref .btn, float;
+		@ref .btn, color;
+		@ref .btn, text-align;
+		@ref .btn, padding;
+		@ref .btn, text-decoration;
+	}
+}
+
 .container {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);

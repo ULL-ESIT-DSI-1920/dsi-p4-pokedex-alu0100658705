@@ -40,6 +40,22 @@ Se han utilizado promesas.
 
 1. **Busca plugins de PostCSS que consideres interesantes y documentalos en el README.md con un enlace a su GitHub y una breve descripción de lo que hacen y para que podría serte útil.**
 
+El plugin que se ha seleccionado ha sido **postcss-ref**. Este plugin permite referenciar propiedades de otras reglas de estilos, definidas en otros elementos, para evitar tener que definirlas nuevamente.
+
+Para instalar el plugin: _npm install postcss-ref_
+
+Lo añadimos a los ficheros de configuración de PostCSS:
+
+![cap_05](src/assets/images/cap05.png)
+
+![cap_06](src/assets/images/cap06.png)
+
+En este caso, se ha utilizado para reutilizar las reglas de estilo de los botones de la barra de navegación en función de si el elemento pertenece a la clase _active_ o no. Para referenciar los elementos se utiliza la regla _@ref_. Veamos el código:
+
+![cap_07](src/assets/images/cap07.png)
+
+Enlace a [GitHub](https://github.com/morishitter/postcss-ref)
+
 2. **Digital Clock: Reto fácil. Implementa un reloj digital que muestre la hora actual. Para conseguir el relleno izquierdo de los ceros, investiga el método .padStart().**
 
 3. **Analogic Clock: Reto difícil. Implementa un reloj analógico que muestre la hora real · Previsualización**
