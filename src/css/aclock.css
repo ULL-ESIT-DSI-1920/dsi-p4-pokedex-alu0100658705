@@ -1,0 +1,73 @@
+.reloj {
+  background-color: antiquewhite;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 600px;
+  width: 600px;
+  border-color: black;
+  border: 2px solid;
+  border-radius: 50%;
+  display: flex;
+  box-shadow: inset 2px 3px 8px 0 black;
+}
+
+.centro {
+  background-color: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  top: -20%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hora {
+  background-color: black;
+  position: absolute;
+  height: 140px;
+  width: 18px;
+  margin: auto;
+  top: -22%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  z-index: 1;
+}
+
+.minutos {
+  background-color: black;
+  position: absolute;
+  height: 200px;
+  width: 12px;
+  margin: auto;
+  top: -32%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom center;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+
+.segundos {
+  background-color: red;
+  position: absolute;
+  height: 250px;
+  width: 5px;
+  margin: auto;
+  top: -42%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom center;
+  transform: rotate(180deg);
+  z-index: 1;
+}

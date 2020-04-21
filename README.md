@@ -58,4 +58,28 @@ Enlace a [GitHub](https://github.com/morishitter/postcss-ref)
 
 2. **Digital Clock: Reto fácil. Implementa un reloj digital que muestre la hora actual. Para conseguir el relleno izquierdo de los ceros, investiga el método .padStart().**
 
+Implementada. Se ha creado una clase _reloj_ con tres elementos hijo, uno para cada uno de los componentes del reloj (hora, minutos y segundos) para trabajar con _Flexbox_. La estructura del fichero html es la siguiente:
+
+![cap_08](src/assets/images/cap08.png)
+
+En el fichero JavaScript se ha definido una función para cada elemento, aunque escencialmente su implementación y funcionamiento es el mismo para cada uno:
+
+![cap_09](src/assets/images/cap09.png)
+
+Contenido del fichero css utilizando _Flexbox_:
+
+![cap_09](src/assets/images/cap09.png)
+
 3. **Analogic Clock: Reto difícil. Implementa un reloj analógico que muestre la hora real · Previsualización**
+
+Se implementa un nuevo fichero html con los componentes del reloj analógico:
+
+![cap_11](src/assets/images/cap11.png)
+
+Para mover las manecillas del reloj se utiliza la transformación _rotate()_ para que giren alrededor del elemento centro:
+
+![cap_10](src/assets/images/cap10.png)
+
+En el archivo JavaScript se define una función similar a la implementada para el reloj digital, donde se toman los elementos hora, donde se debe corregir el valor para que este en formato PM o AM (es decir que sea un valor entre 1-12), minutos y segundos. Luego se toman los grados que se van a rotar cada elemento: al ser 12 horas se multiplica el valor hora por 30 (12x30 = 360), y minutos y segundos por 6 (60x6 = 360). Luego los valores de los grados se actualizan para cada uno de los elementos:
+
+![cap_12](src/assets/images/cap12.png)

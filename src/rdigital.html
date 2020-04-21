@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Reloj Digital</title>
-		<link rel="stylesheet" type="text/css" href="./css/index.pcss" />
-	</head>
-	<body>
-		<div class="topnav">
-			<a class="active" href="rdigital.html">Reloj Digital</a>
-			<a class="btn" href="index.html">PokeDex</a>
-			<a class="btn" href="#contact">Reloj Analógico</a>
-		</div>
-	</body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Reloj Digital</title>
+	<script defer src="js/dclock.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<link rel="stylesheet" type="text/css" href="./css/dclock.css" />
+</head>
+
+<body>
+	<div class="topnav">
+		<a class="btn" href="index.html">PokeDex</a>
+		<a class="active" href="rdigital.html">Reloj Digital</a>
+		<a class="btn" href="ranalogic.html">Reloj Analógico</a>
+	</div>
+	<br />
+	<div class="reloj">
+		<div id="hora" class="clock hora" onload="get_hora()"></div>
+		<div id="minutos" class="clock minutos" onload="get_minutos()"></div>
+		<div id="segundos" class="clock segundos" onload="get_segundos()"></div>
+	</div>
+</body>
+
 </html>
